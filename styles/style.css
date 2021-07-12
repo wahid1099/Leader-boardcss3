@@ -81,3 +81,69 @@ top blog styles
   font-size: 16px;
   color: #562eff;
 }
+/*-----------------------------
+ Courses Style -----------
+ -------------------------- */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+}
+.course {
+  height: 343px;
+  width: 267px;
+  padding: 5px;
+  box-shadow: 0px 9.34229px 32.3557px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+  padding-left: 9px;
+}
+.course-duration {
+  background-color: #fee5df;
+  color: #ed6b4f;
+  border-radius: 14px;
+  margin-right: 10px;
+  padding: 4px 8px;
+}
+.course-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.course .course-banner img {
+  width: 266px;
+  height: 141px;
+}
+.fa-star.filled {
+  color: #ffc014;
+}
+.fa-star.empty {
+  color: #aeaeae;
+}
+/*----------------------------------------------------------------
+ Media Queries 
+ -------------------------------------------*/
+/* For Mobile Devices */
+@media only screen and (max-width: 668px) {
+  .container {
+    width: 100%;
+  }
+  .player,
+  .blog,
+  .course {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+/* tablet devices */
+
+@media only screen and (min-width: 668px) and (max-width: 992px) {
+}
