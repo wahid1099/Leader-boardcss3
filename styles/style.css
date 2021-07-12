@@ -146,4 +146,12 @@ top blog styles
 /* tablet devices */
 
 @media only screen and (min-width: 668px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5px;
+  }
 }
